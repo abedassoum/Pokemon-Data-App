@@ -1,0 +1,23 @@
+{
+  "name": "Pikachu",
+  "description": "When it is angered, it immediately discharges the energy stored in the pouches in its cheeks",
+  "ability": "When an enemy touches Pikachu, there's a chance that the static electricity in Pikachu's body will render the foe paralyzed.",
+  "image": "https://www.justcolor.net/kids/wp-content/common/images/cle/pokemons/persos/pokemon_pikachu.png",
+  "footprint": "undefined",
+  "dexIndex": "#0025",
+  "type": "Electric",
+  "subType": "Electric",
+  "weaknesses": "Pikachu is a Electric type Pokémon, which makes it weak against Ground moves.",
+  "gender": "feminist",
+  "weight": "13.2 lbs",
+  "height": "2.54 cm",
+  "generation": "Generation 1",
+  "gameVersion": "All versions",
+  "canEvolve": "Raichu",
+  "statsHP": "35",
+  "statsAttack": "55",
+  "statsDefence": "40",
+  "statsSpecialAttack": "50",
+  "statsSpecialDefence": "50",
+  "statsSpeed": "90"
+}
