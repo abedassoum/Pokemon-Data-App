@@ -237,7 +237,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: rgb(172, 198, 201);
+    background-color: rgb(176, 213, 217);
 }
 
 tr {
@@ -247,7 +247,7 @@ tr {
 }
 
 tr:hover {
-    background-color: rgb(38, 76, 89);
+    background-color: rgb(50, 96, 112);
     color: #f1f1f1;
 }
 
