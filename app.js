@@ -47,7 +47,7 @@ function showPokemon(pokemon) {
         <img src="${pokemon.image}"/>
         <h2>${pokemon.name}</h2>
         <p>Type: ${pokemon.type}</p>
-        <p>Pokedex Number: ${pokemon.dexIndex}</p>
+        <p>Pokedex Number: ${pokemon.dexindex}</p>
      </article>`);
   document.querySelector("#pokemon article:last-child").addEventListener("click", pokemonClicked);    
   function pokemonClicked() {
