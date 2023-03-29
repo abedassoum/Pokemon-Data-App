@@ -27,6 +27,16 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+footer {
+    background-color: lightblue;
+    color: coral;
+    padding: 1.5cm;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
 main {
     background: yellow;
     padding: 137px 0 0;
