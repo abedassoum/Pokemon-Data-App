@@ -4,7 +4,7 @@
 window.addEventListener("load", initApp)
 
 async function initApp(){
-const pikachu = await getPokemon("pikachu.json")
+const pikachu = await getPokemon("https://cederdorff.github.io/dat-js/05-data/pokemons.json");
 showPokemon(pikachu);
 
 }
@@ -39,20 +39,25 @@ function showPokeModal(pokemon) {
   document.querySelector("#dialog").showModal();
 }
 
-function showPokemon(pokemon) {
-  console.log(pokemon);
-  document.querySelector("#pokemon").insertAdjacentHTML(
-    "beforeend", /*HTML*/`
+function showPokemon(pokemons) {
+  console.log(pokemons);
+  for (const pokemon of pokemons){
+document.querySelector("#pokemon").insertAdjacentHTML(
+  "beforeend",
+  /*HTML*/ `
       <article>
         <img src="${pokemon.image}"/>
         <h2>${pokemon.name}</h2>
         <p>Type: ${pokemon.type}</p>
         <p>Pokedex Number: ${pokemon.dexindex}</p>
-     </article>`);
-  document.querySelector("#pokemon article:last-child").addEventListener("click", pokemonClicked);    
-  function pokemonClicked() {
-   showPokeModal(pokemon);
+     </article>`
+);
+document.querySelector("#pokemon article:last-child").addEventListener("click", pokemonClicked);
+function pokemonClicked() {
+  showPokeModal(pokemon);
+}
   }
+  
 }
 
  
