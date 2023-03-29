@@ -1,3 +1,3 @@
 link til min github pages:
 
-https://github.com/abedassoum/Pokemon-Data-App
+https://abedassoum.github.io/Pokemon-Data-App/
