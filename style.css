@@ -2,7 +2,7 @@
 
 html {
     color: coral;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
     height: 100%;
     width: 100%;
 }
@@ -21,26 +21,27 @@ img {
 header {
     background-color: lightblue;
     color: coral;
-    padding: 1.5cm;
+    padding: 1cm;
     text-align: left;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: cursive;
+}
+
+main {
+    background: yellow;
+    padding: 80px 0 0;
 }
 
 footer {
     background-color: lightblue;
     color: coral;
-    padding: 1.5cm;
+    padding: 1cm;
     text-align: left;
     font-size: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 
 }
 
-main {
-    background: yellow;
-    padding: 137px 0 0;
-}
 
 
 .grid-container {
@@ -77,7 +78,7 @@ main {
     padding: 1.5em;
     background-color: lightblue;
     cursor: pointer;
-    border-radius: 65px;
+    border-radius: 40px;
 }
 
 
@@ -108,8 +109,8 @@ button {
 dialog {
     border-color: white;
     background-color: yellow;
-    width: 65vw;
-    padding: 2em 1em;
+    width: 75vw;
+    padding: 0.5em 1em;
 }
 
 
@@ -122,6 +123,51 @@ dialog {
 dialog ul {
     margin: 0.5em 0 1em;
     padding-inline-start: 1.5em;
+}
+
+/* Define the animation */
+@keyframes moveDialog {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5px, -5px);
+  }
+  20% {
+    transform: translate(-10px, -10px);
+  }
+  30% {
+    transform: translate(-5px, -5px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+  60% {
+    transform: translate(10px, 10px);
+  }
+  70% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Apply the animation to the dialog when hovering over it */
+#dialog:hover {
+  animation-name: moveDialog;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 
