@@ -81,8 +81,8 @@ footer {
 
 
 .grid-container img {
-    width: 110%;
-    height: 400px;
+    width: 80%;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -123,7 +123,6 @@ dialog ul {
     padding-inline-start: 1.5em;
 }
 
-/* Define the animation */
 @keyframes moveDialog {
   0% {
     transform: translate(0, 0);
@@ -160,7 +159,7 @@ dialog ul {
   }
 }
 
-/* Apply the animation to the dialog when hovering over it */
+
 #dialog:hover {
   animation-name: moveDialog;
   animation-duration: 1s;
