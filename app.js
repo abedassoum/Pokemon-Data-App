@@ -37,6 +37,7 @@ function showPokeModal(pokemon) {
   document.querySelector("#dialog-specialDefence").textContent = `${pokemon.statsSpecialDefence}`
   document.querySelector("#dialog-speed").textContent = `${pokemon.statsSpeed}`;
   document.querySelector("#dialog").showModal();
+
 }
 
 function showPokemon(pokemons) {

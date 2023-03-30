@@ -28,7 +28,7 @@ header {
 }
 
 main {
-    background: yellow;
+    background: coral;
     padding: 80px 0 0;
 }
 
@@ -106,7 +106,7 @@ button {
 
 dialog {
     border-color: white;
-    background-color: yellow;
+    background-color: coral;
     width: 75vw;
     padding: 0.5em 1em;
 }
