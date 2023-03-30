@@ -44,6 +44,20 @@ function showPokemon(pokemons) {
 
 
 function showPokeModal(pokemon) {
+
+  let canEvolve = gatherData(pokemon)
+
+  function gatherData(pokemon) {
+    let canEvolve = "";
+    if (pokemon.canEvolve === true){
+      canEvolve = "This pokemon can evolve"
+    } else if (pokemon.canEvolve === false) {
+      canEvolve = "Does not have any evolutions"
+    }
+    return canEvolve;
+  }
+
+
   console.log(pokemon);
   document.querySelector("#dialog-image").src = `${pokemon.image}`
   document.querySelector("#dialog-name").textContent = `${pokemon.name}`
@@ -57,7 +71,7 @@ function showPokeModal(pokemon) {
   document.querySelector("#dialog-height").textContent = `${pokemon.height}`;
   document.querySelector("#dialog-generation").textContent = `${pokemon.generation}`;
   document.querySelector("#dialog-gameVersion").textContent = `${pokemon.gameVersion}`;
-  document.querySelector("#dialog-evolve").textContent = `${pokemon.canEvolve}`;
+  document.querySelector("#dialog-evolve").textContent = canEvolve;
   document.querySelector("#dialog-HP").textContent = `${pokemon.statsHP}`;
   document.querySelector("#dialog-attack").textContent = `${pokemon.statsAttack}`;
   document.querySelector("#dialog-defence").textContent = `${pokemon.statsDefence}`;
