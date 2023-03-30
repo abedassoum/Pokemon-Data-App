@@ -15,6 +15,34 @@ async function getPokemon (url) {
  return data;
 }
 
+
+function showPokemon(pokemons) {
+  console.log(pokemons);
+  for (const pokemon of pokemons) {
+    document.querySelector("#pokemon").insertAdjacentHTML(
+      "beforeend",
+      /*HTML*/ `
+      <article>
+        <img src="${pokemon.image}"/>
+        <h2>${pokemon.name}</h2>
+        <p>Type: ${pokemon.type}</p>
+        <p>Pokedex Number: ${pokemon.dexindex}</p>
+     </article>`
+    );
+    document
+      .querySelector("#pokemon article:last-child")
+      .addEventListener("click", pokemonClicked);
+    function pokemonClicked() {
+      showPokeModal(pokemon);
+    }
+  }
+}
+
+
+
+
+
+
 function showPokeModal(pokemon) {
   console.log(pokemon);
   document.querySelector("#dialog-image").src = `${pokemon.image}`
@@ -40,25 +68,6 @@ function showPokeModal(pokemon) {
 
 }
 
-function showPokemon(pokemons) {
-  console.log(pokemons);
-  for (const pokemon of pokemons){
-document.querySelector("#pokemon").insertAdjacentHTML(
-  "beforeend",
-  /*HTML*/ `
-      <article>
-        <img src="${pokemon.image}"/>
-        <h2>${pokemon.name}</h2>
-        <p>Type: ${pokemon.type}</p>
-        <p>Pokedex Number: ${pokemon.dexindex}</p>
-     </article>`
-);
-document.querySelector("#pokemon article:last-child").addEventListener("click", pokemonClicked);
-function pokemonClicked() {
-  showPokeModal(pokemon);
-}
-  }
-  
-}
+
 
  
